@@ -1,7 +1,5 @@
 from numpy import append
-from sqlalchemy import all_
 import streamlit as st
-import pickle
 import pandas as pd
 
 
