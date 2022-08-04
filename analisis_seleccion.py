@@ -21,8 +21,6 @@ def app():
     df_by_year=df_by_year.set_axis(index)
     st.bar_chart(df_by_year)
 
-    fig = plt.figure() 
-    plt.plot(df_by_year)
 
     all_data_free_covid=all_data[(all_data['year']<2020)]
 
