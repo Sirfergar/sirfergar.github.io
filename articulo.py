@@ -18,7 +18,7 @@ def app():
     st.image("images/grafico2InterMilan.jpg")
     st.caption("Gráfico 2.- Asistencia media anual en los partidos como local del Inter de Milán.")
     st.write("Si bien es cierto que parecen unos buenos números, el problema surge en el porcentaje de asistencia respecto al total. En promedio, en los últimos años el 40% del estadio estaba vacío. Es decir, de cada 10 asientos solo se ocupaban 6, dando lugar a imágenes como la siguiente.  Donde con asistencias de más de 45.000 personas el campo daba la sensación de estar medio vacío.")
-    st.image("images/foto2SanSiro.jpg")
+    st.image("images/Foto2SanSiro.jpg")
     st.caption("Imagen  1.- Partido temporada 2014-2015 Inter de Milán vs. Hellas Verona")
     st.write("¿Cuál ha sido la decisión en la ciudad de Milán para el nuevo estadio? Reducir la capacidad del actual en 20.000 mil personas, pasando de 80.000 asientos a 60.000.")
     st.write("Segundo caso, el Atlético de Madrid pasó del Vicente Calderón al Wanda Metropolitano incrementando su capacidad de 55000 a 68500 asientos. Viviendo el mejor momento de su historia, el Atlético aumento la capacidad de su estadio en un 25%.")
