@@ -1,0 +1,45 @@
+import streamlit as st
+import pandas as pd
+
+def app():
+
+    # estadios_construidos = pd.read_csv (r'estadios_construidos.csv',sep=";")
+    # estadios_grandes = pd.read_csv(r'estadios_sup_70000.csv',sep=";")
+
+    st.title("MESTALLA, EL TAMAÑO SÍ IMPORTA")
+    st.image("images/foto1Mestalla.jpg")
+
+    st.write("En la última reunión entre el Valencia Club de Fútbol y las instituciones valencianas se marcó como línea roja para llegar a un entendimiento que la capacidad del nuevo Mestalla debía ascender a mínimo 70.000 personas. Se argumentó que esta decisión se debía al Mundial de Futbol 2030 que puede que se celebre entre España y Portugal. Más concretamente esta especificación de capacidad se debe a que una de las exigencias para poder ser el estadio que albergue una de las semifinales es contar con dicha capacidad.")
+    st.write("No obstante, varias son las preguntas que surgen a raíz de esto. ¿Necesita el Valencia CF un estadio con dicha capacidad? ¿Cuántos estadios de futbol en las grandes ligas cuentan con esas cantidades de espectadores en sus estadios? ¿Qué beneficios económicos supone una semifinal del Mundial para la ciudad de Valencia? ¿Supone muchos más beneficios albergar una semifinal que una fase de grupos? ¿Vale la pena tomar esta decisión para un evento puntual? ¿Es mejor tener un campo más pequeño, que apriete y que este casi siempre lleno? ¿O un campo que esta mitad de temporada vacío y cubra la demanda de partidos puntuales? ¿Vale la pena tener un campo muy grande semi vacío la mayoría de las veces y que se llene únicamente en eventos/partidos puntuales? ¿O es mejor un estadio más discreto y que este casi siempre lleno?")
+    st.write("A la hora de analizar rentabilidades económicas el cálculo se complica bastante ya que muchos son los factores que pueden afectar a dicha decisión. Es por ello que se va a analizar que han hecho los equipos del viejo continente en materia de estadios en las últimas décadas para poder comparar al Valencia Cf con ellos.")
+    st.image("images/grafico1ACMilan.jpg")
+    st.caption("Gráfico 1.- Asistencia media anual en los partidos como local del AC Milán")
+    st.write("Si se sigue el mismo análisis con la afición del Inter de Milán (ya que comparten estadio) se puede observar que el número aumenta a 55.000 espectadores.")
+    st.image("images/grafico2InterMilan.jpg")
+    st.caption("Gráfico 2.- Asistencia media anual en los partidos como local del Inter de Milán.")
+    st.write("Si bien es cierto que parecen unos buenos números, el problema surge en el porcentaje de asistencia respecto al total. En promedio, en los últimos años el 40% del estadio estaba vacío. Es decir, de cada 10 asientos solo se ocupaban 6, dando lugar a imágenes como la siguiente.  Donde con asistencias de más de 45.000 personas el campo daba la sensación de estar medio vacío.")
+    st.image("images/foto2SanSiro.jpg")
+    st.caption("Imagen  1.- Partido temporada 2014-2015 Inter de Milán vs. Hellas Verona")
+    st.write("¿Cuál ha sido la decisión en la ciudad de Milán para el nuevo estadio? Reducir la capacidad del actual en 20.000 mil personas, pasando de 80.000 asientos a 60.000.")
+    st.write("Segundo caso, el Atlético de Madrid pasó del Vicente Calderón al Wanda Metropolitano incrementando su capacidad de 55000 a 68500 asientos. Viviendo el mejor momento de su historia, el Atlético aumento la capacidad de su estadio en un 25%.")
+    st.write("Si se comprueban los datos de 2017 a 2019 (sin tener en cuentas las temporadas covid y post covid), es decir, los primeros años del Wanda, se observa que la asistencia promedio al estadio ha sido de 55.500, 56.000 y 57.000 respectivamente, con un porcentaje de asistencia promedio un poco superior al 80%.  Estos números comparados con las temporadas anteriores se comprueba que han sido superiores.")
+    st.image("images/grafico3Atm.jpg")
+    st.caption("Gráfico 3.- Asistencia media anual en los partidos como local del Atlético de Madrid.")
+    st.write("De esto se puede extrapolar que al aumentar la capacidad del estadio aumenta también el número promedio de asistentes. Es decir, si se hiciera un estadio de exactamente la misma capacidad que el anterior, el número de asistentes promedio aumentaría. Esto puede tener una explicación en la ilusión que genera en la afición la presentación de una nueva casa y todo lo que ello conlleva. En el caso particular del Atlético de Madrid se puede comprobar que dicho incremento es de un 30%.")
+    st.write("El último caso que se va a analizar un caso muy similar al del Valencia, pero vivido en Italia hace 30 años. En 1990 se celebró el Mundial de Fútbol en Italia y para ello se tuvieron que construir infraestructuras acordes a las dimensiones del evento. Se levantó en Turín el Estadio de los Alpes, un estadio que contaba con una capacidad de 71.000 espectadores. En aquella época se acordó que tras la conclusión del mundial pasaría a ser el estadio de la Juventus y el Torino (en Italia es común que equipos de la misma ciudad compartan estadios). Sorprendentemente este estadio duró abierto únicamente 16 años y fue demolido a los 19 años de su construcción. Pero, lo más curioso de todo es que la Juventus construyó su actual estadio, el Juventus Stadium, con 30.000 mil espectadores menos que el Estadio de los Alpes. Alegando los elevados costes de mantenimiento que el anterior le suponía y siendo esta una de las principales causas del cambio.")
+    st.write("Otros datos curiosos que cabe destacar es que en toda Europa únicamente hay únicamente 8 estadios que superan la capacidad de 70.000 mil personas.")
+    st.caption("Tabla 1.- Equipos con capacidad superior a 70.000 personas en las 6 grandes ligas europeas.")
+    st.image("images/tabla1.jpg")
+    # st.dataframe(estadios_construidos)
+    # st.dataframe(estadios_grandes)
+    st.write("También cabe destacar las capacidades de los estadios construidos desde comienzos de siglo, existiendo únicamente un estadio con una capacidad mayor de 70.000 espectadores, siendo este el del Bayern.")
+    st.caption("Tabla 2.- Estadios construidos en las principales ligas durante el siglo XXI.")
+    st.image("images/tabla2.jpg")
+    st.write("Vistos todos estos casos, vamos a analizar los números del Valencia CF. Mestalla, ha visto como desde comienzos de siglo la asistencia a Mestalla tiene una tendencia descendente. Para que los números no se vean mermados por estas últimas temporadas tan agónicas, vamos a coger la asistencia media de los últimos 20 años. Que se traduce en unas 41.000 personas de media. Supongamos que se construye el estadio de 70.000 personas, la gente se emociona, se recarga de ilusión y el Valencia entra varios años seguidos en Champions. Por lo tanto, podemos suponer un ascenso de asistentes similar al del atlético de Madrid del 30%. Con lo cual si subimos ese porcentaje nos quedaría una entrada media de aproximadamente 53.500 personas con una asistencia media que cubriría el 75% de asistencia.")
+    st.write("Como vemos esto es suponiendo el mejor de todos los casos, pero ¿es esto plausible? Si analizamos que ha sucedido desde 1999 hasta 2022, ¿Qué porcentaje de equipos de las 6 grandes ligas ha superado esta cifra de asistencia media alguna temporada? Este resultado nos da que únicamente se ha superado en un 8% de las veces.")
+    st.image("images/Grafico4vcf.jpg")
+    st.caption("Gráfico 4.- Asistencia media anual en los partidos como local del Valencia CF.")
+    st.write("Una vez vista y analizada toda la información surge la duda principal ¿Vale la pena construir un campo de 70.000 personas? ¿O se trata de una decisión meramente política para poder decir que se trajo el Mundial a Valencia?")
+    st.caption("Los datos empleados para este articulo han sido extraída del portal web www.transfermarkt.com")
+
+    st.write('Autor: fernandofergar2@gmail.com Linkedin: https://www.linkedin.com/in/fernandofergar/')
